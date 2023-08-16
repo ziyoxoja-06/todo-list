@@ -87,10 +87,6 @@ const toggleDone = (id)=>{
   updateDoc(doc(todosCollectionRef, id), {
     done: !todos.value[index].done
   })
-  navigator.share({
-    title: 'Badass Todo',
-    text: todos.value[index].content
-  })
 }
 </script>
 
